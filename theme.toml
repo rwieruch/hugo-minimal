@@ -1,0 +1,18 @@
+name = "Hugo Minimal"
+license = "MIT"
+licenselink = "https://github.com/rwieruch/hugo-minimal/blob/master/LICENSE.md"
+description = "Minimalistic Blog Theme"
+homepage = "https://github.com/rwieruch"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.17
+
+[author]
+  name = "Robin Wieruch"
+  homepage = "https://github.com/rwieruch"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

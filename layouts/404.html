@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-sm-6 col-sm-offset-3" id="error-page">
+
+                    <div class="box">
+
+                        <h3>We are sorry - this page is not here anymore</h3>
+                        <h4 class="text-muted">Error 404 - Page not found</h4>
+                    </div>
+
+
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "newsletter.html" . }}
+
+        {{ partial "subfooter.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+  </body>
+</html>

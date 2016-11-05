@@ -1,0 +1,46 @@
+{{ if isset .Site.Params.social_share "twitter" }}
+<a
+    class="icon-twitter"
+    href="https://twitter.com/share?text={{ .Title }} by {{ .Site.Params.social_handles.twitter }}&url={{ .Permalink }}"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    <i class="fa fa-twitter"></i>
+</a>
+{{ end }}
+{{ if isset .Site.Params.social_share "facebook" }}
+<a
+    class="icon-facebook"
+    href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    <i class="fa fa-facebook"></i>
+</a>
+{{ end }}
+{{ if isset .Site.Params.social_share "linkedin" }}
+<a
+    class="icon-linkedin"
+    href="https://www.linkedin.com/shareArticle?mini=true&title={{ .Title }}&url={{ .Permalink }}">
+    <i class="fa fa-linkedin"></i>
+</a>
+{{ end }}
+{{ if isset .Site.Params.social_share "google" }}
+<a
+    class="icon-google"
+    href="https://plus.google.com/share?url={{ .Permalink }}"
+    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+    <i class="fa fa-google"></i>
+</a>
+{{ end }}
+{{ if isset .Site.Params.social_share "reddit" }}
+<a
+    class="icon-reddit"
+    target="_blank"
+    href="http://reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}">
+    <i class="fa fa-reddit"></i>
+</a>
+{{ end }}
+{{ if isset .Site.Params.social_share "mail" }}
+<a
+    class="icon-mail"
+    href="mailto:adresse@example.com?subject={{ .Title }}&body={{ .Permalink }}">
+    <i class="fa fa-send"></i>
+</a>
+{{ end }}

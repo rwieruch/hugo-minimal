@@ -1,0 +1,5 @@
+<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:type" content="{{ if .Params.type }}{{ .Params.type }}{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.banner }}{{ else }}{{ .Site.Params.logo }}{{ end }}" />

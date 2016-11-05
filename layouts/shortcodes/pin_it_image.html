@@ -1,0 +1,11 @@
+<div class="pinterest-pinner-wrapper" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="pinterest-pinner">
+        <a
+            data-pin-do="buttonPin"
+            data-pin-save="true"
+            data-pin-tall="true"
+            href="https://www.pinterest.com/pin/create/button/?url={{ .Page.Permalink }}&media={{ .Page.Permalink }}{{ .Get 1 }}&description=Pin%20it">
+        </a>
+    </div>
+    <img class="post-image-primary" src="{{ .Get 1 }}" alt="{{ .Get 0 }}" itemprop="image" />
+</div>

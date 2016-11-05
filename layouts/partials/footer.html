@@ -1,0 +1,27 @@
+<footer id="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="info list-inline quicklinks pull-left">
+          {{ range .Site.Params.footer.info }}
+            <li>{{ .text  | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline footer-social-buttons text-center">
+          {{ range .Site.Params.footer.social }}
+            <li><a href="{{ .link }}"><i class="fa {{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks pull-right">
+          {{ range .Site.Params.footer.quicklinks }}
+            <li><a target="_blank" href="{{ .link }}">{{ .text  | markdownify }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,17 @@
+{{ if .Params.banner }}
+<!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image:src" content="{{ .Site.BaseURL }}{{ .Params.banner }}"/>
+{{ else }}
+    <meta name="twitter:card" content="summary"/>
+{{ end }}
+
+<!-- Twitter Card data -->
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}"/>
+{{ with .Site.Params.social_accounts.twitter }}<meta name="twitter:site" content="@{{ . }}"/>{{ end }}
+{{ with .Site.Params.social_accounts.twitter_domain }}<meta name="twitter:domain" content="{{ . }}"/>{{ end }}
+{{ if isset .Params "author" }}
+    {{ $author := index .Site.Params.authors .Params.author }}
+    {{ with $author.twitter }}<meta name="twitter:creator" content="@{{ $author.twitter }}"/>{{ end }}
+{{ end }}

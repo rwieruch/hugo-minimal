@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "social/share_buttons.html" . }}
+
+        <div class="hidden-xs">
+            {{ partial "newsletter_tiny.html" . }}
+        </div>
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="col-md-8 col-md-offset-2" id="blog-post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+
+                        <p class="text-muted text-uppercase mb-small text-center"><span itemprop="author publisher">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ if .Params.contribute }} - <a target="_blank" href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">Edit on GitHub</a>{{ end }}</p>
+
+                        <div id="post-content" itemprop="articleBody">
+                          {{ .Content }}
+
+                          {{ partial "post/feedback_follow_me.html" . }}
+                        </div>
+                        <!-- /#post-content -->
+                        {{ if .Site.DisqusShortname }}
+                        <div id="comments">
+                            {{ template "_internal/disqus.html" . }}
+                        </div>
+                        {{ end }}
+
+                    </article>
+                    <!-- /#blog-post -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "newsletter.html" . }}
+
+        {{ partial "subfooter.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

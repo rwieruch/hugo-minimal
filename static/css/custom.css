@@ -1,0 +1,197 @@
+.post-share {
+  position: fixed;
+  width: 50px;
+  margin: 0;
+  top: 40%;
+  left: 0;
+  z-index: 10000000;
+}
+
+.post-share-desktop {
+  margin: 0;
+  top: 40%;
+  left: 0;
+}
+
+.post-share-mobile {
+  margin: 0 auto;
+  top: auto;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.post-share-mobile a {
+  float: left;
+  height: 56px;
+  width: 25%;
+}
+
+.post-share a {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+}
+
+.post-share a.icon-twitter {
+  background-color: #83c3f3;
+}
+
+.post-share a.icon-facebook {
+  background-color: #3b5998;
+}
+
+.post-share a.icon-google {
+  background-color: #dd4b39;
+}
+
+.post-share a.icon-linkedin {
+  background-color: #0077b5;
+}
+
+.post-share a.icon-reddit {
+  background-color: #cee3f8;
+}
+
+.post-share a.icon-mail {
+  background-color: #ed4926;
+}
+
+.post-share a.icon-linkedin {
+  background-color: #0077b5;
+}
+
+.post-image-primary {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+/* MailChimp */
+
+#mc_embed_signup {
+  margin: 10px 0;
+}
+
+#mc_embed_signup_scroll input.email {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Highlight */
+
+pre {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+pre span[style*="background-color: #4f424c"] { /* custom pygment background color */
+    display: block;
+}
+
+.highlight {
+  border-left: 5px solid #38bb6c;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #06b6ef;
+    background-color: #2f1e2e;
+    border-radius: 4px;
+}
+
+/* Shortcodes */
+
+.read-before {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+}
+
+/* Header */
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Post Content */
+
+#post-content h1 {
+  text-align: center;
+}
+
+#post-content h2.chapter-header {
+  text-align: center;
+  border-top: 1px solid #f3f3f3;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/* Navbar */
+
+.navbar .navbar-buttons a, .navbar .navbar-buttons a.btn, .navbar .navbar-buttons .btn-default.navbar-toggle {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.navbar ul.nav > li > a i {
+  font-size: 18px;
+}
+
+/* MailChimp */
+
+#mc_embed_signup form {
+
+}
+
+/* Pinterest */
+
+.pinterest-pinner-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.pinterest-pinner {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.pinterest-pinner-wrapper:hover .pinterest-pinner {
+  opacity: 1;
+}
+
+h2.newsletter {
+  font-size: 30px;
+}
