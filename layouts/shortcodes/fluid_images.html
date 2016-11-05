@@ -1,0 +1,29 @@
+{{ $paramCount := len .Params }}
+{{ if gt $paramCount 0 }}
+<div class="col-md-12">
+{{ range $param := .Params }}
+  {{ $items := split $param "|" }}
+  {{ $itemCount := len $items }}
+  {{ if ge $itemCount 2 }}
+  <div class="{{ index $items 0 }}">
+    <div>
+      <img
+        class="img-responsive"
+        src="{{ index $items 1 }}"
+        alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}">
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
+</div>
+{{ end }}
+
+<!--
+Usage
+
+{{< fluid_images
+  "col-md-4|/img/posts/post/image.png|some alt text"
+  "col-md-4|/img/posts/post/image.png|some alt text"
+  "col-md-4|/img/posts/post/image.png|some alt text"
+>}}
+-->

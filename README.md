@@ -1,7 +1,5 @@
 # hugo-minimal
 
-Starter theme for your blog.
-
 ![Desktop](https://s21.postimg.org/9e1ms3tl3/Screen_Shot_2016_11_05_at_18_15_41.png)
 
 ## Installation
