@@ -1,0 +1,15 @@
+<div class="box-inline col-md-12">
+    <div class="col-md-12 text-center">
+        <h2 class="newsletter">{{ .Get 0 }}</h2>
+    </div class="col-md-12">
+    <div class="eq-high-container">
+        <div class="col-md-6">
+            <p class="lead">
+                {{ .Get 1 }}
+            </p>
+        </div>
+        <div class="col-md-6">
+            <a class="btn btn-template-main" href="{{ .Site.Params.mailchimp.signup_url }}">Get the Package <i class="fa fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
