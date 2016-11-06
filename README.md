@@ -18,6 +18,16 @@ theme = "hugo-minimal"
 
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
+## Shortcodes
+
+### package-box
+
+{{< fluid_images
+  "col-md-4|/img/posts/post/image.png|some alt text"
+  "col-md-4|/img/posts/post/image.png|some alt text"
+  "col-md-4|/img/posts/post/image.png|some alt text"
+->}}
+
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/rwieruch/hugo-minimal/issues) to let me know. Or make directly a [pull request](//github.com/rwieruch/hugo-minimal/pulls).
