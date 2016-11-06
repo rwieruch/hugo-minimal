@@ -2936,6 +2936,7 @@ ul.footer-social-buttons {
   font-size: 18px;
   line-height: 20px;
   height: 62px;
+  margin-top: 4px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
