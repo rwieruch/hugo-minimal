@@ -1,3 +1,13 @@
+{{ if isset .Site.Params.social_share "pinterest" }}
+<a
+    class="icon-pinterest"
+    data-pin-do="buttonBookmark"
+    data-pin-save="true"
+    data-pin-custom="true"
+    href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}&description=Pin%20it">
+    <i class="fa fa-pinterest"></i>
+</a>
+{{ end }}
 {{ if isset .Site.Params.social_share "twitter" }}
 <a
     class="icon-twitter"

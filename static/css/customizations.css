@@ -34,6 +34,11 @@
   display: block;
 }
 
+.post-share a.icon-pinterest {
+  background-color: #cb2027;
+  cursor: pointer;
+}
+
 .post-share a.icon-twitter {
   background-color: #83c3f3;
 }
