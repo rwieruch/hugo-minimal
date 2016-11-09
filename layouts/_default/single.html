@@ -32,6 +32,10 @@
                           {{ .Content }}
 
                           {{ partial "post/feedback_follow_me.html" . }}
+
+                          {{ if .Site.Params.package_box.enabled }}
+                            {{ partial "package_box.html" . }}
+                          {{ end }}
                         </div>
                         <!-- /#post-content -->
                         {{ if .Site.DisqusShortname }}
