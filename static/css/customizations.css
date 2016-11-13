@@ -183,7 +183,7 @@ h3 {
   display: block;
   position: absolute;
   left: 10px;
-  top: 10px;
+  top: 20px;
   z-index: 8999999;
   opacity: 0;
 
@@ -229,5 +229,13 @@ h2.newsletter {
 /*  Fluid Images */
 
 .fluid-images {
-  margin: 15px0 ;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row-small-padding {
+  [class*="col-"] {
+    padding-left: 7.5px !important;
+    padding-right: 7.5px !important;
+  }
 }

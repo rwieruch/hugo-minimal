@@ -1,6 +1,6 @@
 {{ $paramCount := len .Params }}
 {{ if gt $paramCount 0 }}
-<div class="row fluid-images">
+<div class="row row-small-padding fluid-images">
 {{ range $param := .Params }}
   {{ $items := split $param "|" }}
   {{ $itemCount := len $items }}
