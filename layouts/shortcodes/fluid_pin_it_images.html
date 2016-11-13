@@ -1,4 +1,6 @@
 {{ $permalink := .Page.Permalink }}
+{{ $title := .Site.Params.Title }}
+{{ $baseUrl := .Site.BaseURL }}
 {{ $paramCount := len .Params }}
 {{ if gt $paramCount 0 }}
 <div class="row fluid-images">
@@ -13,7 +15,7 @@
               data-pin-do="buttonPin"
               data-pin-save="true"
               data-pin-tall="true"
-              href="https://www.pinterest.com/pin/create/button/?url={{ $permalink }}&media={{ $permalink }}{{ index $items 1 }}&description=Pin%20it">
+              href="https://www.pinterest.com/pin/create/button/?url={{ $permalink }}&media={{ $baseUrl }}{{ index $items 1 }}&description={{ $title }}">
           </a>
       </div>
       <img class="img-responsive" src="/{{ index $items 1 }}" alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}" itemprop="image" />
