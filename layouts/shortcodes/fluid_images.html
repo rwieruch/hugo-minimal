@@ -1,11 +1,11 @@
 {{ $paramCount := len .Params }}
 {{ if gt $paramCount 0 }}
-<div class="row row-small-padding fluid-images">
+<div class="row fluid-images">
 {{ range $param := .Params }}
   {{ $items := split $param "|" }}
   {{ $itemCount := len $items }}
   {{ if ge $itemCount 2 }}
-  <div class="{{ index $items 0 }}">
+  <div class="col-small-padding {{ index $items 0 }}">
     <div>
       <img
         class="img-responsive"

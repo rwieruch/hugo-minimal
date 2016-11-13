@@ -233,9 +233,7 @@ h2.newsletter {
   margin-bottom: 15px;
 }
 
-.row-small-padding {
-  [class*="col-"] {
+.col-small-padding {
     padding-left: 7.5px !important;
     padding-right: 7.5px !important;
-  }
 }
