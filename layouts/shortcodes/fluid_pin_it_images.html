@@ -1,0 +1,24 @@
+{{ $paramCount := len .Params }}
+{{ if gt $paramCount 0 }}
+<div class="row fluid-images">
+{{ range $param := .Params }}
+  {{ $items := split $param "|" }}
+  {{ $itemCount := len $items }}
+  {{ if ge $itemCount 2 }}
+  <div class="{{ index $items 0 }}">
+    <div class="pinterest-pinner-wrapper" itemscope itemtype="http://schema.org/ImageObject">
+      <div class="pinterest-pinner">
+          <a
+              data-pin-do="buttonPin"
+              data-pin-save="true"
+              data-pin-tall="true"
+              href="https://www.pinterest.com/pin/create/button/?url={{ .Page.Permalink }}&media={{ .Page.Permalink }}{{ index $items 1 }}&description=Pin%20it">
+          </a>
+      </div>
+      <img class="img-responsive" src="{{ index $items 1 }}" alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}" itemprop="image" />
+  </div>
+  </div>
+  {{ end }}
+{{ end }}
+</div>
+{{ end }}

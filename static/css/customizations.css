@@ -68,8 +68,7 @@
 }
 
 .post-image-primary {
-  max-width: 100%;
-  max-height: 100%;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -225,4 +224,10 @@ h2.newsletter {
   vertical-align: middle;
   text-align: center;
   float: none
+}
+
+/*  Fluid Images */
+
+.fluid-images {
+  margin: 15px0 ;
 }
