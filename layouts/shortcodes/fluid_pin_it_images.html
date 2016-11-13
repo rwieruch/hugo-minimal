@@ -16,7 +16,7 @@
               href="https://www.pinterest.com/pin/create/button/?url={{ $permalink }}&media={{ $permalink }}{{ index $items 1 }}&description=Pin%20it">
           </a>
       </div>
-      <img class="img-responsive" src="{{ index $items 1 }}" alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}" itemprop="image" />
+      <img class="img-responsive" src="/{{ index $items 1 }}" alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}" itemprop="image" />
   </div>
   </div>
   {{ end }}
