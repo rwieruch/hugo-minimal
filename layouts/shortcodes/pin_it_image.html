@@ -1,11 +1,13 @@
-<div class="pinterest-pinner-wrapper" itemscope itemtype="http://schema.org/ImageObject">
-    <div class="pinterest-pinner">
-        <a
-            data-pin-do="buttonPin"
-            data-pin-save="true"
-            data-pin-tall="true"
-            href="https://www.pinterest.com/pin/create/button/?url={{ .Page.Permalink }}&media={{ .Site.BaseURL }}{{ .Get 1 }}&description={{ .Site.Params.Title }}">
-        </a>
+<div class="post-image-primary">
+    <div class="pinterest-pinner-wrapper" itemscope itemtype="http://schema.org/ImageObject">
+        <div class="pinterest-pinner">
+            <a
+                data-pin-do="buttonPin"
+                data-pin-save="true"
+                data-pin-tall="true"
+                href="https://www.pinterest.com/pin/create/button/?url={{ .Page.Permalink }}&media={{ .Site.BaseURL }}{{ .Get 1 }}&description={{ .Site.Params.Title }}">
+            </a>
+        </div>
+        <img class="img-responsive" src="/{{ .Get 1 }}" alt="{{ .Get 0 }}" itemprop="image" />
     </div>
-    <img class="post-image-primary img-responsive" src="/{{ .Get 1 }}" alt="{{ .Get 0 }}" itemprop="image" />
 </div>
