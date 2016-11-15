@@ -1,4 +1,22 @@
-.post-share {
+.feedback-and-share {
+  margin: 20px 0;
+}
+
+.feedback-and-share .lead {
+  margin-bottom: 10px;
+}
+
+.post-share-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.post-share-inline a {
+  flex: 1;
+}
+
+.post-share-fixed {
   position: fixed;
   width: 50px;
   margin: 0;

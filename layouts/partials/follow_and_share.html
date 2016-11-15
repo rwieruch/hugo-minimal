@@ -1,0 +1,18 @@
+{{ if .Site.Params.follow_and_share.enabled }}
+<div class="feedback-and-share text-center">
+    <hr>
+    {{ if .Site.Params.follow_and_share.follow_enabled }}
+    <p class="lead">
+        {{ .Site.Params.follow_and_share.follow_text | safeHTML }}
+    </p>
+    {{ end }}
+    {{ if .Site.Params.follow_and_share.share_enabled }}
+        <p class="lead">
+            {{ .Site.Params.follow_and_share.share_text | safeHTML }}
+        </p>
+        <div class="post-share post-share-inline">
+            {{ partial "social/_buttons.html" . }}
+        </div>
+    {{ end }}
+</div>
+{{ end }}

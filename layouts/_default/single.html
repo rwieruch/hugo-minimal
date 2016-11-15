@@ -31,7 +31,7 @@
                         <div id="post-content" itemprop="articleBody">
                           {{ .Content }}
 
-                          {{ partial "post/feedback_follow_me.html" . }}
+                          {{ partial "follow_and_share.html" . }}
 
                           {{ if .Site.Params.package_box.enabled }}
                             {{ partial "package_box.html" . }}
