@@ -23,9 +23,9 @@ For more information read the official [setup guide](https://gohugo.io/overview/
 ### package-box
 
 {{< fluid_images
-  "col-md-4|/img/posts/post/image.png|some alt text"
-  "col-md-4|/img/posts/post/image.png|some alt text"
-  "col-md-4|/img/posts/post/image.png|some alt text"
+  "col-xs-4|img/posts/post/image.png|some alt text"
+  "col-xs-4|img/posts/post/image.png|some alt text"
+  "col-xs-4|img/posts/post/image.png|some alt text"
 ->}}
 
 ## Contributing
