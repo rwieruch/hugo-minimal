@@ -125,11 +125,12 @@ pre span[style*="background-color: #4f424c"] { /* custom pygment background colo
 }
 
 code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #06b6ef;
-    background-color: #2f1e2e;
-    border-radius: 4px;
+  padding: 2px 2px;
+  margin: 0 2px;
+  font-size: 90%;
+  color: #06b6ef;
+  background-color: #2f1e2e;
+  border-radius: 4px;
 }
 
 /* Shortcodes */
