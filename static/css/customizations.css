@@ -255,3 +255,23 @@ h2.newsletter {
 .col-small-padding {
   padding: 7.5px !important;
 }
+
+/* Paragraph */
+
+.section-divider {
+  margin-top: 52px;
+  margin-bottom: 42px;
+  display: block;
+  border: 0;
+  text-align: center;
+}
+
+.section-divider:before {
+  content: '...';
+  display: inline-block;
+  margin-left: .6em;
+  font-size: 20px;
+  letter-spacing: .6em;
+  position: relative;
+  top: -30px;
+}
