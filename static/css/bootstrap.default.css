@@ -2179,6 +2179,9 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-post #post-content {
   margin-bottom: 20px;
 }
+#blog-post #post-content p {
+  margin-bottom: 20px;
+}
 #blog-post .comment {
   margin-bottom: 25px;
 }
@@ -3106,7 +3109,7 @@ ul.footer-social-buttons {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #555555;
-  background-color: #80cbd9;
+  background-color: #9fd4b4;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -3183,8 +3186,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* scaffolding */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 16px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
   color: #555555;
 }
 a {
@@ -3193,7 +3197,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #267280;
+  color: #38bb6c;
   text-decoration: underline;
 }
 a:focus {
