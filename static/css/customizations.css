@@ -256,6 +256,11 @@ h2.newsletter {
   padding: 7.5px !important;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 /* Paragraph */
 
 .section-divider {
