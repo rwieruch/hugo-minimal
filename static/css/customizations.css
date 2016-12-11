@@ -233,18 +233,6 @@ h2.newsletter {
   margin-bottom: 0px;
 }
 
-.eq-high-container {
-  display: table;
-  table-layout: fixed;
-}
-
-.eq-high-container div {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  float: none
-}
-
 /*  Fluid Images */
 
 .fluid-images {

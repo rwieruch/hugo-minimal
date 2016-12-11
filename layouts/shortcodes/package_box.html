@@ -1,15 +1,17 @@
 <div class="box-inline col-md-12">
     <div class="col-md-12 text-center">
         <h2 class="newsletter">{{ .Get 0 }}</h2>
-    </div class="col-md-12">
-    <div class="eq-high-container">
-        <div class="col-md-6">
-            <p class="lead">
-                {{ .Get 1  | safeHTML }}
-            </p>
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ .Site.BaseURL}}{{ .Get 3 }}">
         </div>
-        <div class="col-md-6">
-            <a class="btn btn-template-main" href="{{ .Site.Params.mailchimp.signup_url }}">{{ .Get 2 }} <i class="fa fa-chevron-right"></i></a>
-        </div>
+        <p class="lead">
+            {{ .Get 1  | safeHTML }}
+        </p>
+        <a
+            class="btn btn-template-main"
+            href="{{ .Get 4 }}"
+        >
+            {{ .Get 2 }} <i class="fa fa-chevron-right"></i>
+        </a>
     </div>
 </div>
