@@ -32,17 +32,14 @@
 }
 
 .post-share-mobile {
-  margin: 0 auto;
   top: auto;
   bottom: 0px;
   width: 100%;
-  text-align: center;
+  display: flex;
 }
 
 .post-share-mobile a {
-  float: left;
-  height: 56px;
-  width: 25%;
+  flex: 1;
 }
 
 .post-share a {
