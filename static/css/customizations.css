@@ -47,6 +47,7 @@
   font-size: 20px;
   padding: 10px;
   display: block;
+  text-align: center;
 }
 
 .post-share a.icon-pinterest {
@@ -71,7 +72,7 @@
 }
 
 .post-share a.icon-reddit {
-  background-color: #cee3f8;
+  background-color: #ff5700;
 }
 
 .post-share a.icon-mail {
