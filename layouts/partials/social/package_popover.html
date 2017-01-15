@@ -1,0 +1,15 @@
+{{ if .Site.Params.package_box.enabled }}
+    <div class="package-popover col-md-3 hidden-xs hidden-sm">
+        {{ if .Site.Params.package_box.img }}
+            <div class="col-md-3">
+                <img class="img-responsive" src="{{ .Site.BaseURL}}{{ .Site.Params.package_box.img }}">
+            </div>
+        {{ end }}
+        <div>
+            {{ .Site.Params.package_box.text_short | safeHTML }}
+            <a href="{{ .Site.Params.package_box.url }}">
+                {{ .Site.Params.package_box.cta }}
+            </a>
+        </div>
+    </div>
+{{ end }}

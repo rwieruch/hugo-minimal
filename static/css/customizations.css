@@ -88,6 +88,21 @@
   margin-bottom: 20px;
 }
 
+/* Package Popover */
+
+.package-popover {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #38bb6c;
+  border-left: 1px solid #38bb6c;
+  background: #ffffff;
+  border-top-left-radius: 5px;
+  margin: 0;
+  padding: 20px;
+  z-index: 10000000;
+}
+
 /* MailChimp */
 
 #mc_embed_signup {
