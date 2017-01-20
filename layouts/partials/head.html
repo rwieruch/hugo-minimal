@@ -4,6 +4,8 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="google-site-verification" content="{{ .Site.Params.google_search.verify }}" />
+
   <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 
   <meta name="author" content="{{ .Site.Author.name }}" />
