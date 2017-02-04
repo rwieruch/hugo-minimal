@@ -28,7 +28,7 @@
 
                     <article class="col-md-8 col-md-offset-2" id="blog-post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
 
-                        <p class="text-muted text-uppercase mb-small text-center"><span itemprop="author publisher">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ if .Params.contribute }} - <a target="_blank" href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">Edit on GitHub</a>{{ end }}</p>
+                        <p class="text-muted text-uppercase mb-small text-center"><span itemprop="author publisher">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ if .Params.contribute }} - <a target="_blank" href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">Edit this Post on GitHub</a>{{ end }}</p>
 
                         <div id="post-content" itemprop="articleBody">
                           {{ .Content }}
