@@ -1,0 +1,5 @@
+{{ if .Site.Params.twitter_follow_post.enabled }}
+    <a target="_blank" href="https://twitter.com/intent/follow?screen_name={{ .Site.Params.twitter_follow_post.handle }}" class="twitter-button-follow">
+         <i class="fa fa-twitter"></i>Follow @{{ .Site.Params.twitter_follow_post.handle }}
+    </a>
+{{ end }}

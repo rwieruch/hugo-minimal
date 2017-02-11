@@ -281,3 +281,73 @@ h2.newsletter {
   position: relative;
   top: -30px;
 }
+
+/* Twitter Button Follow */
+
+.twitter-button-follow {
+  border: none;
+  background-color: #83c3f3;
+  width: auto;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: Helvetica;
+  font-size: 13px;
+  line-height: 1.5em;
+  margin: 0 auto 3rem;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a.twitter-button-follow:hover {
+  color: #fff;
+  box-shadow: 0 0 3px #21a4d0;
+  text-decoration: none !important;
+}
+
+a.twitter-button-follow:active {
+  color: #fff;
+  box-shadow: 0 0 3px #21a4d0;
+  text-decoration: none !important;
+}
+
+a.twitter-button-follow:visited {
+  color: #fff;
+  box-shadow: 0 0 3px #21a4d0;
+  text-decoration: none !important;
+}
+
+/* Github Button Follow */
+
+.github-button-follow {
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  width: auto;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: Helvetica;
+  font-size: 13px;
+  line-height: 1.5em;
+  margin: 0 auto 3rem;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a.github-button-follow:hover {
+  color: #000;
+  box-shadow: 0 0 3px #d5d5d5;
+  text-decoration: none !important;
+}
+
+a.github-button-follow:active {
+  color: #000;
+  box-shadow: 0 0 3px #d5d5d5;
+  text-decoration: none !important;
+}
+
+a.github-button-follow:visited {
+  color: #000;
+  box-shadow: 0 0 3px #d5d5d5;
+  text-decoration: none !important;
+}

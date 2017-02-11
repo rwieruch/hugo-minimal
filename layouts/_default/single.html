@@ -26,19 +26,34 @@
 
                 <div class="row">
 
-                    <article class="col-md-8 col-md-offset-2" id="blog-post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-
-                        <p class="text-muted text-uppercase mb-small text-center"><span itemprop="author publisher">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ if .Params.contribute }} - <a target="_blank" href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">Edit this Post on GitHub</a>{{ end }}</p>
+                    <article
+                        class="col-md-8 col-md-offset-2"
+                        id="blog-post"
+                        itemprop="blogPosts"
+                        itemscope itemtype="http://schema.org/BlogPosting">
 
                         <div id="post-content" itemprop="articleBody">
-                          {{ .Content }}
 
-                          {{ partial "follow_and_share.html" . }}
+                            <header>
+                                <h1 itemprop="name headline">{{ .Params.headline }}</h1>
+                            </header>
 
-                          {{ if .Site.Params.package_box.enabled }}
-                            {{ partial "package_box.html" . }}
-                          {{ end }}
+                            <div class="text-center">
+                                {{ partial "social/twitter_follow_button.html" . }}
+                                &nbsp;
+                                {{ partial "social/github_follow_button.html" . }}
+                            </div>
+
+                            <p class="text-muted text-uppercase mb-small text-center"><span itemprop="author publisher">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ if .Params.contribute }}<span class="hidden-xs hidden-sm"> - <a target="_blank" href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">Edit this Post on GitHub</a></span>{{ end }}</p>
+                              {{ .Content }}
+
+                              {{ partial "follow_and_share.html" . }}
+
+                              {{ if .Site.Params.package_box.enabled }}
+                                {{ partial "package_box.html" . }}
+                              {{ end }}
                         </div>
+
                         <!-- /#post-content -->
                         {{ if .Site.DisqusShortname }}
                         <div id="comments">
