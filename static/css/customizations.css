@@ -351,3 +351,38 @@ a.github-button-follow:visited {
   box-shadow: 0 0 3px #d5d5d5;
   text-decoration: none !important;
 }
+
+/* Instagram Button Follow */
+
+.instagram-button-follow {
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  width: auto;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: Helvetica;
+  font-size: 13px;
+  line-height: 1.5em;
+  margin: 0 auto 3rem;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a.instagram-button-follow:hover {
+  color: #000;
+  box-shadow: 0 0 3px #d5d5d5;
+  text-decoration: none !important;
+}
+
+a.instagram-button-follow:active {
+  color: #000;
+  box-shadow: 0 0 3px #d5d5d5;
+  text-decoration: none !important;
+}
+
+a.instagram-button-follow:visited {
+  color: #000;
+  box-shadow: 0 0 3px #d5d5d5;
+  text-decoration: none !important;
+}
