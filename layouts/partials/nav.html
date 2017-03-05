@@ -34,7 +34,11 @@
                     {{ end }}
                     {{ range .Site.Params.menu }}
                     <li class="dropdown">
-                        <a style="color: #38bb6c" href="{{ .url }}">{{ .name }}</a>
+                        {{ if .cta }}
+                            <a style="color: #38bb6c" href="{{ .url }}">{{ .name }}</a>
+                        {{ else }}
+                            <a href="{{ .url }}">{{ .name }}</a>
+                        {{ end }}
                     </li>
                     {{ end }}
                 </ul>

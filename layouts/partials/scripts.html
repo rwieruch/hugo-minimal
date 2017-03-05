@@ -7,3 +7,38 @@
 {{ if .Site.Params.pin_it_button.enabled }}
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 {{ end }}
+
+{{ if .Site.Params.stripe.enabled }}
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+    <script>
+        // usage <a href="#" id="stripeButton">Stripe</a>
+
+        var handler = StripeCheckout.configure({
+          key: {{ .Site.Params.stripe.key }},
+          image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+          locale: 'auto',
+          token: function(token) {
+            // You can access the token ID with `token.id`.
+            // Get the token ID to your server-side code for use.
+          }
+        });
+
+        document.getElementById('stripeButton').addEventListener('click', function(e) {
+          // Open Checkout with further options:
+          handler.open({
+            name: 'robinwieruch.de',
+            description: 'Thanks For Your Support',
+            zipCode: true,
+            currency: 'usd',
+            amount: 2000
+          });
+          e.preventDefault();
+        });
+
+        // Close Checkout on page navigation:
+        window.addEventListener('popstate', function() {
+          handler.close();
+        });
+    </script>
+{{ end }}

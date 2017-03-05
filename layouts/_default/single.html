@@ -46,14 +46,15 @@
                                 {{ partial "social/github_follow_button.html" . }}
                             </div>
 
-                            <p class="text-muted text-uppercase mb-small text-center"><span itemprop="author publisher">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ if .Params.contribute }}<span class="hidden-xs hidden-sm"> - <a target="_blank" href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">Edit this Post on GitHub</a></span>{{ end }}</p>
-                              {{ .Content }}
+                            {{ partial "single_subheader.html" . }}
 
-                              {{ partial "follow_and_share.html" . }}
+                            {{ .Content }}
 
-                              {{ if .Site.Params.package_box.enabled }}
+                            {{ partial "follow_and_share.html" . }}
+
+                            {{ if .Site.Params.package_box.enabled }}
                                 {{ partial "package_box.html" . }}
-                              {{ end }}
+                            {{ end }}
                         </div>
 
                         <!-- /#post-content -->

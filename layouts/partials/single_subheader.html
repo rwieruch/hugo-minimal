@@ -1,0 +1,20 @@
+<p class="text-muted text-uppercase mb-small text-center">
+    <span itemprop="author publisher">
+        {{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}
+    </span>
+
+    {{ if .Date }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+    {{ end }}
+
+    {{ if .Params.contribute }}
+        <span class="hidden-xs hidden-sm"> - <a
+            target="_blank"
+            href="{{ .Site.Params.github_contribution.link }}{{ .Params.contribute }}">
+                Edit this Post on GitHub
+            </a>
+        </span>
+    {{ end }}
+</p>
