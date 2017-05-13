@@ -19,7 +19,7 @@
 {{ if isset .Site.Params.social_share "twitter" }}
 <a
     class="icon-twitter"
-    href="https://twitter.com/share?text={{ .Title }} by {{ .Site.Params.social_handles.twitter }}&url={{ .Permalink }}"
+    href="https://twitter.com/share?text={{ .Title }} by {{ .Site.Params.social_handles.twitter }} {{ .Params.hashtag }}&url={{ .Permalink }}"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
     <i class="fa fa-twitter"></i>
 </a>
