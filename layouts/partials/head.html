@@ -6,12 +6,14 @@
 
   <meta name="google-site-verification" content="{{ .Site.Params.google_search.verify }}" />
 
-  <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+  <title>
+    {{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}
+  </title>
 
   <meta name="author" content="{{ .Site.Author.name }}" />
 
   {{ if .Description }}
-  <meta name="description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Description }}">
   {{ end }}
 
   {{ .Hugo.Generator }}
