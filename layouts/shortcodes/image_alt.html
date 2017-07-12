@@ -1,3 +1,8 @@
 <div class="post-image-primary" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="img-responsive" src="/{{ .Get 1 }}" alt="{{ .Get 0 }}" itemprop="image contentUrl" />
+    <img
+        class="img-lazy img-responsive"
+        data-lazy-src="/{{ .Get 1 }}"
+        alt="{{ .Get 0 }}"
+        itemprop="image contentUrl"
+    />
 </div>

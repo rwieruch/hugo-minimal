@@ -8,8 +8,8 @@
   <div class="col-small-padding {{ index $items 0 }}">
     <div>
       <img
-        class="img-responsive"
-        src="/{{ index $items 1 }}"
+        class="img-lazy img-responsive"
+        data-lazy-src="/{{ index $items 1 }}"
         alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}">
     </div>
   </div>
