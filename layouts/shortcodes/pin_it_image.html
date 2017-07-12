@@ -8,6 +8,7 @@
                 href="https://www.pinterest.com/pin/create/button/?url={{ .Page.Permalink }}&media={{ .Site.BaseURL }}{{ .Get 1 }}&description={{ .Site.Params.Title }}">
             </a>
         </div>
-        <img class="img-responsive" src="/{{ .Get 1 }}" alt="{{ .Get 0 }}" itemprop="image" />
+
+        <img class="img-lazy img-responsive" data-lazy-src="/{{ .Get 1 }}" alt="{{ .Get 0 }}" itemprop="image" />
     </div>
 </div>

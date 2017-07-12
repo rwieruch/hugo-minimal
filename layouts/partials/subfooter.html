@@ -11,9 +11,11 @@
                     <div class="image same-height-always">
                         <a href="{{ .Permalink }}">
                           {{ if isset .Params "banner" }}
-                            <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
-                          {{ else }}
-                            <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                            <img
+                                data-lazy-src="{{ .Site.BaseURL}}{{ .Params.banner }}"
+                                class="img-lazy img-responsive"
+                                alt="{{.Params.keyword}}"
+                            >
                           {{ end }}
                         </a>
                     </div>
@@ -37,7 +39,11 @@
             <div class="blog-entries">
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <img src="{{ .Site.BaseURL}}img/page/profile.jpg" class="img-responsive" alt="">
+                        <img
+                            data-lazy-src="{{ .Site.BaseURL}}img/page/profile.jpg"
+                            class="img-lazy img-responsive"
+                            alt="profile"
+                        >
                     </div>
                     <div class="name same-height-always">
                         <p>

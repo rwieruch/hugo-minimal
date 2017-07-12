@@ -3,7 +3,7 @@
         <h2 class="newsletter">{{ .Site.Params.package_box.header }}</h2>
         {{ if .Site.Params.package_box.img }}
             <div class="col-md-4">
-                <img class="img-responsive" src="{{ .Site.BaseURL}}{{ .Site.Params.package_box.img }}">
+                <img class="img-lazy img-responsive" data-lazy-src="{{ .Site.BaseURL}}{{ .Site.Params.package_box.img }}">
             </div>
         {{ end }}
         <p class="lead">

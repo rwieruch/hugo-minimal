@@ -11,7 +11,11 @@
                                   <div class="image">
                                       <a href="{{ .Permalink }}">
                                           {{ if .Params.banner }}
-                                          <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
+                                            <img
+                                              data-lazy-src="{{ .Site.BaseURL}}{{ .Params.banner }}"
+                                              class="img-lazy img-responsive"
+                                              alt="{{.Params.keyword}}"
+                                            >
                                           {{ end }}
                                       </a>
                                   </div>
