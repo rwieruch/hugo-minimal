@@ -5,7 +5,26 @@ var DESKTOP_EXTENSION = '_1024';
 var TABLET_EXTENSION = '_800';
 var MOBILE_EXTENSION = '_640';
 
-function deferLoadImages() {
+init();
+
+function init() {
+  initLazyImages();
+  initServiceWorker();
+}
+
+function initServiceWorker() {
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+     .register('../sw.js')
+     .then(doneServiceWorker);
+  }
+}
+
+function doneServiceWorker() {
+  console.log('Service Worker for PWA Registered');
+}
+
+function initLazyImages() {
   var imgDefer = document.getElementsByClassName('img-lazy');
 
   for (var i = 0; i < imgDefer.length; i++) {
@@ -42,4 +61,3 @@ function getThumbSrc(src) {
   return src.replace(/\.[^/.]+$/, MOBILE_EXTENSION + '.' + extension);
 }
 
-deferLoadImages();
