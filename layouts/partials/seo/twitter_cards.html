@@ -1,7 +1,7 @@
-{{ if .Params.banner }}
+{{ if .Params.card }}
 <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image:src" content="{{ .Site.BaseURL }}{{ .Params.banner }}"/>
+    <meta name="twitter:image:src" content="{{ .Site.BaseURL }}{{ .Params.card }}"/>
 {{ else }}
     <meta name="twitter:card" content="summary"/>
 {{ end }}
