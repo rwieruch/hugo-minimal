@@ -20,6 +20,7 @@
       </div>
       <img
         class="img-lazy img-responsive"
+        data-is-src-set="is-src-set"
         data-lazy-src="/{{ index $items 1 }}"
         alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}"
         itemprop="image"
