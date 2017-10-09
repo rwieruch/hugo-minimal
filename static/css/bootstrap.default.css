@@ -2556,9 +2556,14 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 10px;
   border-bottom: solid 1px #eeeeee;
 }
-#subfooter .blog-entries .item .image {
+#subfooter .blog-entries .item .article {
   float: left;
   width: 20%;
+  margin-right: 10px;
+}
+#subfooter .blog-entries .item .profile {
+  float: left;
+  width: 25%;
   margin-right: 10px;
 }
 #subfooter .blog-entries .item .name {

@@ -8,7 +8,7 @@
             <div class="blog-entries">
                 {{ range first 3 (where .Site.Pages "Type" "blog") }}
                 <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
+                    <div class="article same-height-always">
                         <a href="{{ .Permalink }}">
                           {{ if isset .Params "banner" }}
                             <img
@@ -39,7 +39,7 @@
 
             <div class="blog-entries">
                 <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
+                    <div class="profile same-height-always">
                         <img
                             data-lazy-src="{{ .Site.BaseURL}}img/page/profile.jpg"
                             class="img-lazy img-responsive"
