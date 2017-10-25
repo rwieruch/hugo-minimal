@@ -247,27 +247,27 @@ h2.newsletter {
   padding: 7.5px !important;
 }
 
-.col-centered{
-    float: none;
-    margin: 0 auto;
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
 /* Paragraph */
 
-.section-divider {
+hr.section-divider {
   margin-top: 52px;
   margin-bottom: 42px;
   display: block;
   border: 0;
   text-align: center;
+  overflow: visible;
 }
 
-.section-divider:before {
+hr.section-divider:before {
+  letter-spacing: .6em;
   content: '...';
   display: inline-block;
   margin-left: .6em;
-  font-size: 20px;
-  letter-spacing: .6em;
   position: relative;
   top: -30px;
 }
