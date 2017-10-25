@@ -20,17 +20,6 @@
 
             <div class="navbar-collapse collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    {{ if .Site.Params.widgets.categories }}
-                    {{ if isset .Site.Taxonomies "categories" }}
-                    {{ if not (eq (len .Site.Taxonomies.categories) 0) }}
-                        {{ range $name, $items := .Site.Taxonomies.categories }}
-                        <li>
-                            <a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ $name }}</a>
-                        </li>
-                        {{ end }}
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
                     {{ range .Site.Params.menu }}
                     <li class="dropdown">
                         {{ if .cta }}
