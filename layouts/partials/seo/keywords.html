@@ -1,3 +1,5 @@
-{{ with .Params.keyword }}
-    <meta content="{{ . }}" name="keywords">
+{{ if .Keywords }}
+  <meta name="keywords" content="{{ delimit .Keywords ", " }}">
+{{ else if .Site.Params.DefaultKeywords }}
+  <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords ", " }}">
 {{ end }}

@@ -14,6 +14,8 @@
 
   {{ if .Description }}
     <meta name="description" content="{{ .Description }}">
+  {{ else if .Site.Params.defaultDescription }}
+    <meta name="description" content="{{ .Site.Params.defaultDescription }}">
   {{ end }}
 
   <meta name="theme-color" content="#38bb6c"/>
