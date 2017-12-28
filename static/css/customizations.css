@@ -272,6 +272,28 @@ hr.section-divider:before {
   top: -30px;
 }
 
+/* Generic Button Follow */
+
+a.generic-button-follow {
+  text-decoration: none !important;
+}
+
+a.generic-button-follow:hover {
+  text-decoration: none !important;
+}
+
+a.generic-button-follow:focus {
+  text-decoration: none !important;
+}
+
+a.generic-button-follow:active {
+  text-decoration: none !important;
+}
+
+a.generic-button-follow:visited {
+  text-decoration: none !important;
+}
+
 /* Twitter Button Follow */
 
 .twitter-button-follow {
