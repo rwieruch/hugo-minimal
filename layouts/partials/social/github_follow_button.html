@@ -1,5 +1,5 @@
 {{ if .Site.Params.github_follow_post.enabled }}
-  <a target="_blank" href="https://github.com/{{ .Site.Params.github_follow_post.handle }}" class="generic-button-follow">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/{{ .Site.Params.github_follow_post.handle }}" class="generic-button-follow">
     <img src="https://img.shields.io/github/followers/{{ .Site.Params.github_follow_post.handle }}.svg?style=social&logo=github&label=Follow" alt="Follow on GitHub">
   </a>
 {{ end }}

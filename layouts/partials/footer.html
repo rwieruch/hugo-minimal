@@ -11,7 +11,7 @@
       <div class="col-md-4">
         <ul class="list-inline footer-social-buttons text-center">
           {{ range .Site.Params.footer.social }}
-            <li><a aria-label="social-media" href="{{ .link }}"><i class="fa {{ .icon }}"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" aria-label="social-media" href="{{ .link }}"><i class="fa {{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
       </div>

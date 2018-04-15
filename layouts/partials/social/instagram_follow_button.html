@@ -1,5 +1,5 @@
 {{ if .Site.Params.instagram_follow_post.enabled }}
-    <a target="_blank" href="https://www.instagram.com/{{ .Site.Params.instagram_follow_post.handle }}" class="instagram-button-follow">
+    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/{{ .Site.Params.instagram_follow_post.handle }}" class="instagram-button-follow">
          <i class="fa fa-instagram"></i>Follow @{{ .Site.Params.instagram_follow_post.handle }}
     </a>
 {{ end }}
