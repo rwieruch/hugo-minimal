@@ -30,13 +30,13 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="{{ .Permalink }}">
+                                      <a href="{{ .Permalink }}" >
                                           {{ if .Params.banner }}
                                            <img
                                               data-lazy-src="{{ .Site.BaseURL}}{{ .Params.banner }}"
                                               data-is-thumb="is-thumb"
                                               class="img-lazy img-responsive"
-                                              alt="{{.Params.keyword}}"
+                                              alt="{{ .Title }}"
                                             >
                                           {{ end }}
                                       </a>

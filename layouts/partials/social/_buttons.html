@@ -1,5 +1,6 @@
 {{ if isset .Site.Params.social_share "pinterest" }}
 <a
+    aria-label="icon-pinterest"
     class="icon-pinterest"
     data-pin-do="buttonBookmark"
     data-pin-save="true"
@@ -10,6 +11,7 @@
 {{ end }}
 {{ if isset .Site.Params.social_share "facebook" }}
 <a
+    aria-label="icon-facebook"
     class="icon-facebook"
     href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
@@ -18,6 +20,7 @@
 {{ end }}
 {{ if isset .Site.Params.social_share "twitter" }}
 <a
+    aria-label="icon-twitter"
     class="icon-twitter"
     href="https://twitter.com/share?text={{ .Title }} by {{ .Site.Params.social_handles.twitter }} {{ .Params.hashtag }}&url={{ .Permalink }}"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -26,6 +29,7 @@
 {{ end }}
 {{ if isset .Site.Params.social_share "reddit" }}
 <a
+    aria-label="icon-reddit"
     class="icon-reddit"
     target="_blank"
     href="http://reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}">
@@ -34,6 +38,7 @@
 {{ end }}
 {{ if isset .Site.Params.social_share "mail" }}
 <a
+    aria-label="icon-mail"
     class="icon-mail"
     href="mailto:address@example.com?subject={{ .Title }}&body={{ .Permalink }}">
     <i class="fa fa-envelope-o"></i>
@@ -41,6 +46,7 @@
 {{ end }}
 {{ if isset .Site.Params.social_share "google" }}
 <a
+    aria-label="icon-google"
     class="icon-google"
     href="https://plus.google.com/share?url={{ .Permalink }}"
     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
@@ -49,6 +55,7 @@
 {{ end }}
 {{ if isset .Site.Params.social_share "linkedin" }}
 <a
+    aria-label="icon-linkedin"
     class="icon-linkedin"
     href="https://www.linkedin.com/shareArticle?mini=true&title={{ .Title }}&url={{ .Permalink }}">
     <i class="fa fa-linkedin"></i>
