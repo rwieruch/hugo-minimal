@@ -398,3 +398,39 @@ a.instagram-button-follow:visited {
   box-shadow: 0 0 3px #d5d5d5;
   text-decoration: none !important;
 }
+
+/* Facebook Button Follow */
+
+.facebook-button-follow {
+  background: #3B5998;
+  border: 1px solid #263961;
+  border-radius: 0;
+  color: #fff;
+  width: auto;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin: 0 auto 3rem;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a.facebook-button-follow:hover {
+  color: #fff;
+  background: #263961;
+  text-decoration: none !important;
+}
+
+a.facebook-button-follow:active {
+  color: #fff;
+  background: #263961;
+  text-decoration: none !important;
+}
+
+a.facebook-button-follow:visited {
+  color: #fff;
+  background: #3B5998;
+  text-decoration: none !important;
+}

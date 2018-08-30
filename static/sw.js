@@ -1,6 +1,6 @@
 // Service Worker can only cache files from folder or subfolder
 
-const CURRENT_CACHE = 'pwa-v6';
+const CURRENT_CACHE = 'pwa-v7';
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
