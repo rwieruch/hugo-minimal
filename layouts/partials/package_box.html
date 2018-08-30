@@ -15,5 +15,14 @@
         >
             {{ .Site.Params.package_box.cta }} <i class="fa fa-chevron-right"></i>
         </a>
+        {{ if .Site.Params.package_box.cta_secondary }}
+            <div>
+                <a
+                    href="{{ .Site.Params.package_box.url_secondary }}"
+                >
+                    {{ .Site.Params.package_box.cta_secondary }}
+                </a>
+            </div>
+        {{ end }}
     </div>
 </div>
