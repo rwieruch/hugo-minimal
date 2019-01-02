@@ -2182,6 +2182,9 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-post #post-content p {
   margin-bottom: 20px;
 }
+#blog-post #post-content blockquote p {
+  margin-bottom: 0 !important;
+}
 #blog-post .comment {
   margin-bottom: 25px;
 }
@@ -3460,6 +3463,10 @@ blockquote {
   font-size: 14px;
   border-left: 5px solid #38bb6c;
 }
+blockquote p {
+  margin-top: 0 !important;
+}
+
 blockquote footer,
 blockquote small,
 blockquote .small {
