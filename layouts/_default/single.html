@@ -1,92 +1,63 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+{{ define "main" }}
 
-  {{ partial "head.html" . }}
+<div class="hidden-xs">
+    {{ partial "newsletter_tiny.html" . }}
+</div>
 
-  <body>
+<div id="content">
+    <div class="container">
 
-    <div id="all">
+        <div class="row">
 
-        <header>
+            <article
+                class="col-md-8 col-md-offset-2"
+                id="blog-post"
+                itemprop="blogPosts"
+                itemscope itemtype="http://schema.org/BlogPosting">
 
-          {{ partial "nav.html" . }}
+                <div id="post-content" itemprop="articleBody">
 
-        </header>
+                    <header>
+                        <h1 itemprop="name headline">{{ .Params.headline }}</h1>
+                    </header>
 
-        {{ partial "social/share_buttons.html" . }}
+                    <div class="text-center">
+                        {{ partial "social/facebook_follow_button.html" . }}
+                        &nbsp;
+                        {{ partial "social/instagram_follow_button.html" . }}
+                        &nbsp;
+                        {{ partial "social/twitter_follow_button.html" . }}
+                        &nbsp;
+                        {{ partial "social/github_follow_button.html" . }}
+                    </div>
 
-        {{ partial "social/package_popover.html" . }}
+                    {{ partial "single_subheader.html" . }}
 
-        <div class="hidden-xs">
-            {{ partial "newsletter_tiny.html" . }}
-        </div>
+                    {{ .Content }}
 
-        <div id="content">
-            <div class="container">
+                    {{ partial "follow_and_share.html" . }}
 
-                <div class="row">
-
-                    <article
-                        class="col-md-8 col-md-offset-2"
-                        id="blog-post"
-                        itemprop="blogPosts"
-                        itemscope itemtype="http://schema.org/BlogPosting">
-
-                        <div id="post-content" itemprop="articleBody">
-
-                            <header>
-                                <h1 itemprop="name headline">{{ .Params.headline }}</h1>
-                            </header>
-
-                            <div class="text-center">
-                                {{ partial "social/facebook_follow_button.html" . }}
-                                &nbsp;
-                                {{ partial "social/instagram_follow_button.html" . }}
-                                &nbsp;
-                                {{ partial "social/twitter_follow_button.html" . }}
-                                &nbsp;
-                                {{ partial "social/github_follow_button.html" . }}
-                            </div>
-
-                            {{ partial "single_subheader.html" . }}
-
-                            {{ .Content }}
-
-                            {{ partial "follow_and_share.html" . }}
-
-                            {{ if .Site.Params.package_box.enabled }}
-                                {{ partial "package_box.html" . }}
-                            {{ end }}
-                        </div>
-
-                        <!-- /#post-content -->
-                        {{ if .Site.DisqusShortname }}
-                        <div id="comments">
-                            {{ partial "disqus.html" . }}
-                        </div>
-                        {{ end }}
-
-                    </article>
-                    <!-- /#blog-post -->
-
+                    {{ if .Site.Params.package_box.enabled }}
+                        {{ partial "package_box.html" . }}
+                    {{ end }}
                 </div>
-                <!-- /.row -->
 
-            </div>
-            <!-- /.container -->
+                <!-- /#post-content -->
+                {{ if .Site.DisqusShortname }}
+                <div id="comments">
+                    {{ partial "disqus.html" . }}
+                </div>
+                {{ end }}
+
+            </article>
+            <!-- /#blog-post -->
+
         </div>
-        <!-- /#content -->
-
-        {{ partial "newsletter.html" . }}
-
-        {{ partial "subfooter.html" . }}
-
-        {{ partial "footer.html" . }}
+        <!-- /.row -->
 
     </div>
-    <!-- /#all -->
+    <!-- /.container -->
+</div>
+<!-- /#content -->
 
-    {{ partial "scripts.html" . }}
-
-  </body>
-</html>
+{{ end }}
