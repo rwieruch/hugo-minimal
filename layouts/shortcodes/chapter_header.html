@@ -1,1 +1,2 @@
-<h2 class="chapter-header" id="{{ .Get 1 }}">{{ .Get 0 }}</h2>
+<hr class="chapter-header-line"/>
+<h2 class="chapter-header" id="{{ .Get 1 }}">{{ .Get 0 }}{{ if .Site.Params.chapter_anchors.enabled }}<a href="#{{ .Get 1 }}"><i class="fa fa-link"></i></a>{{ end }}</h2>
