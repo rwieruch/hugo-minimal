@@ -2638,26 +2638,6 @@ ul.footer-social-buttons {
 .info {
   margin-left: 15px;
 }
-#copyright {
-  background: #333;
-  color: #ccc;
-  padding: 15px 0;
-  font-size: 12px;
-  line-height: 28px;
-}
-#copyright p {
-  margin: 0;
-}
-#copyright a {
-  color: #eeeeee;
-}
-@media (max-width: 991px) {
-  #copyright p {
-    float: none !important;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-}
 [data-animate] {
   opacity: 0;
   filter: alpha(opacity=0);
