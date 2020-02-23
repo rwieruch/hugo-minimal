@@ -434,3 +434,54 @@ a.facebook-button-follow:visited {
   background: #3B5998;
   text-decoration: none !important;
 }
+
+/* Site Footer */
+
+#copyright {
+  background: #333;
+  color: #ccc;
+  padding: 15px 0;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+#copyright a {
+  color: #eeeeee;
+}
+
+#copyright .footer-social-buttons {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  #copyright ul {
+    margin: 0;
+  }
+
+  #copyright .footer-social-buttons li {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  #copyright .footer-links li {
+    display: list-item;
+    text-align: right;
+    margin-right: 0;
+  }
+}
+
+/*
+  The Social Media Buttons have a line height of 1.58 inherited from bootstrap.default.css body (ln 3198) and font-size of 20px
+
+  We can use just add a margin to the bottom of the footer whenever the screen meets the criteria of the social
+  media links going to the bottom of the webpage. The height of the buttons as appear on screen is ((1.58 * 20)) => 31.6px
+
+  The buttons also have 10px worth of padding we just add that will account for when the screen width is quite narrow and
+  the content in the footer wraps.
+*/
+
+@media (max-width: 991px) {
+  #copyright {
+    margin-bottom: 41.6px;
+  }
+}

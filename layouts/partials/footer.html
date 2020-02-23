@@ -1,27 +1,31 @@
 <footer id="copyright">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <ul class="info list-inline quicklinks pull-left">
+
+      <div class="col-xs-4">
+        <ul class="info list-inline pull-left">
           {{ range .Site.Params.footer.info }}
             <li>{{ .text  | markdownify }}</li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-md-4">
-        <ul class="list-inline footer-social-buttons text-center">
+
+      <div class="col-xs-4 text-center">
+        <ul class="list-inline footer-social-buttons">
           {{ range .Site.Params.footer.social }}
             <li><a target="_blank" rel="noopener noreferrer" aria-label="social-media" href="{{ .link }}"><i class="fa {{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-md-4">
-        <ul class="info list-inline quicklinks pull-right">
+
+      <div class="col-xs-4">
+        <ul class="list-inline pull-right footer-links">
           {{ range .Site.Params.footer.quicklinks }}
             <li><a aria-label="quicklinks" href="{{ .link }}">{{ .text  | markdownify }}</a></li>
           {{ end }}
         </ul>
       </div>
+
     </div>
   </div>
 </footer>
