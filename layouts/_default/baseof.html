@@ -17,9 +17,7 @@
 
         {{ partial "social/package_popover.html" . }}
 
-        {{ partial "newsletter_tiny.html" . }}
-
-        {{ partial "recent_posts_list.html" . }}
+        {{ block "main" . }}{{ end }}
 
         {{ partial "newsletter.html" . }}
 
